@@ -1,0 +1,926 @@
+{
+	"info": {
+		"_postman_id": "eba35097-925a-4efc-bfb3-8aca85fb3dab",
+		"name": "Chess.com API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Player",
+			"item": [
+				{
+					"name": "Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/player/:username",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"player",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "hikaru"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Player Stats",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/player/:username/stats",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"player",
+								":username",
+								"stats"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "hikaru"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Games Currently Playing",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/player/:username/games",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"player",
+								":username",
+								"games"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "hikaru"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Monthly Archives",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/player/:username/games/archives",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"player",
+								":username",
+								"games",
+								"archives"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "hikaru"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Complete Monthly Archives",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/player/:username/games/:year/:month",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"player",
+								":username",
+								"games",
+								":year",
+								":month"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "hikaru"
+								},
+								{
+									"key": "year",
+									"value": "2022"
+								},
+								{
+									"key": "month",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Multi-Game PGN Download",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/player/:username/games/:year/:month/pgn",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"player",
+								":username",
+								"games",
+								":year",
+								":month",
+								"pgn"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "hikaru"
+								},
+								{
+									"key": "year",
+									"value": "2022"
+								},
+								{
+									"key": "month",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Player's Clubs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/player/:username/clubs",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"player",
+								":username",
+								"clubs"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "hikaru"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Player Matches",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/player/:username/matches",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"player",
+								":username",
+								"matches"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "hikaru"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Player's Tournaments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/player/:username/tournaments",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"player",
+								":username",
+								"tournaments"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "hikaru"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Games to-move",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/player/:username/games/to-move",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"player",
+								":username",
+								"games",
+								"to-move"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "hikaru"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Titled Players",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/titled/:title",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"titled",
+								":title"
+							],
+							"variable": [
+								{
+									"key": "title",
+									"value": "GM"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clubs",
+			"item": [
+				{
+					"name": "Clubs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/club/:url_id",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"club",
+								":url_id"
+							],
+							"variable": [
+								{
+									"key": "url_id",
+									"value": "chess-com-developer-community"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Club Members",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/club/:url_id/members",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"club",
+								":url_id",
+								"members"
+							],
+							"variable": [
+								{
+									"key": "url_id",
+									"value": "chess-com-developer-community"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Club Matches",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/club/:url_id/matches",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"club",
+								":url_id",
+								"matches"
+							],
+							"variable": [
+								{
+									"key": "url_id",
+									"value": "chess-com-developer-community"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Club Tournaments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/tournament/:url_id",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"tournament",
+								":url_id"
+							],
+							"variable": [
+								{
+									"key": "url_id",
+									"value": "62nd-chess-com-quick-knockouts-1600-1799"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Country Clubs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/country/:iso/clubs",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"country",
+								":iso",
+								"clubs"
+							],
+							"variable": [
+								{
+									"key": "iso",
+									"value": "US"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Puzzles",
+			"item": [
+				{
+					"name": "Daily Puzzle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/puzzle",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"puzzle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Random Daily Puzzle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/puzzle/random",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"puzzle",
+								"random"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Team Matches",
+			"item": [
+				{
+					"name": "Live Team match",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/match/live/:id",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"match",
+								"live",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "5833"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Live Team Match Board",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/match/live/:id/:board",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"match",
+								"live",
+								":id",
+								":board"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "5833"
+								},
+								{
+									"key": "board",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Daily Team Matches",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/match/:id",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"match",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "12803"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Daily Team Match Board",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/match/:id/:board",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"match",
+								":id",
+								":board"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "12803"
+								},
+								{
+									"key": "board",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tournaments",
+			"item": [
+				{
+					"name": "Tournaments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/tournament/:url_id",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"tournament",
+								":url_id"
+							],
+							"variable": [
+								{
+									"key": "url_id",
+									"value": "-33rd-chesscom-quick-knockouts-1401-1600"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tournament Rounds",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/tournament/:url_id/:round",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"tournament",
+								":url_id",
+								":round"
+							],
+							"variable": [
+								{
+									"key": "url_id",
+									"value": "-33rd-chesscom-quick-knockouts-1401-1600"
+								},
+								{
+									"key": "round",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tournament's Round Group",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/tournament/:url_id/:round/:group",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"tournament",
+								":url_id",
+								":round",
+								":group"
+							],
+							"variable": [
+								{
+									"key": "url_id",
+									"value": "-33rd-chesscom-quick-knockouts-1401-1600"
+								},
+								{
+									"key": "round",
+									"value": "1"
+								},
+								{
+									"key": "group",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Countries",
+			"item": [
+				{
+					"name": "Countries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/country/:iso",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"country",
+								":iso"
+							],
+							"variable": [
+								{
+									"key": "iso",
+									"value": "US"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Country Players",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/country/:iso/players",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"country",
+								":iso",
+								"players"
+							],
+							"variable": [
+								{
+									"key": "iso",
+									"value": "US"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Country Clubs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/country/:iso/clubs",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"country",
+								":iso",
+								"clubs"
+							],
+							"variable": [
+								{
+									"key": "iso",
+									"value": "US"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Streamers",
+			"item": [
+				{
+					"name": "Streamers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/streamers",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"streamers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Leaderboards",
+			"item": [
+				{
+					"name": "Leaderboards",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.chess.com/pub/leaderboards",
+							"protocol": "https",
+							"host": [
+								"api",
+								"chess",
+								"com"
+							],
+							"path": [
+								"pub",
+								"leaderboards"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
